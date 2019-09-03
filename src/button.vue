@@ -22,7 +22,11 @@
                 type: String,
                 default: 'left',
                 validator (value) {
-                    return value === 'left' && value === 'right';
+                    if (value !== 'left' && value !== 'right') {
+                        return false
+                    }else {
+                        return true
+                    }
                 }
             }
         }
