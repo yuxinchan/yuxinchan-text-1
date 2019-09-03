@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="52e198ae-c03f-4361-a492-042c4b541f03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,10 +66,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="91" column="6" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
+            <state relative-caret-position="504">
+              <caret line="101" column="36" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="36" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#334#357#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1567413205842</updated>
       <workItem from="1567413212540" duration="5576000" />
-      <workItem from="1567474616922" duration="15810000" />
+      <workItem from="1567474616922" duration="16326000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1567413781670</created>
@@ -274,15 +275,21 @@
       <option name="project" value="LOCAL" />
       <updated>1567499655676</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="使用 chai.expect 添加了四个测试用例">
+      <created>1567513040523</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1567513040523</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21386000" />
+    <option name="totallyTimeSpent" value="21902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="669" y="10" width="976" height="795" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23404256" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -321,7 +328,8 @@
     <MESSAGE value="创建 button group" />
     <MESSAGE value="检测 button-group 子元素是否为 button" />
     <MESSAGE value="button-group 第一个元素不需要 margin left -1px" />
-    <option name="LAST_COMMIT_MESSAGE" value="button-group 第一个元素不需要 margin left -1px" />
+    <MESSAGE value="使用 chai.expect 添加了四个测试用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用 chai.expect 添加了四个测试用例" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/button.js" />
@@ -379,10 +387,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="91" column="6" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
+        <state relative-caret-position="504">
+          <caret line="101" column="36" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="36" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#334#357#0" expanded="true" />
           </folding>
         </state>
       </provider>
