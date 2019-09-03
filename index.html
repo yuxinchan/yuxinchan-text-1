@@ -35,7 +35,13 @@
 </head>
 <body>
 <div id="app">
-    <g-button icon="settings" icon-position="left">
+    <g-button :loading="loading1" @click="loading1 = !loading1">
+        加载
+    </g-button>
+    <g-button icon="settings" :loading="loading2" @click="loading2 = !loading2">
+        设置
+    </g-button>
+    <g-button icon="settings" icon-position="right">
         设置
     </g-button>
 </div>
