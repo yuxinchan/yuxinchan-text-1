@@ -32,30 +32,47 @@
             font-size: var(--font-size);
         }
     </style>
+    <style>
+        .box {
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
-    <g-button :loading="loading1" @click="loading1 = !loading1">
-        加载
-    </g-button>
-    <g-button icon="settings" :loading="loading2" @click="loading2 = !loading2">
-        设置
-    </g-button>
-    <g-button icon="download" icon-position="right">
-        下载
-    </g-button>
-    <g-button-group>
-        <g-button icon="left">
-            上级
+    <div class="box">
+        <g-button :loading="loading1" @click="loading1 = !loading1">
+            加载
         </g-button>
-        <g-button>
-            更多
+        <g-button icon="settings" :loading="loading2" @click="loading2 = !loading2">
+            设置
         </g-button>
-        <g-button icon="right" icon-position="right">
-            下级
+        <g-button icon="download" icon-position="right">
+            下载
         </g-button>
-    </g-button-group>
-    <div id="test"></div>
+        <g-button-group>
+            <g-button icon="left">
+                上级
+            </g-button>
+            <g-button>
+                更多
+            </g-button>
+            <g-button icon="right" icon-position="right">
+                下级
+            </g-button>
+        </g-button-group>
+    </div>
+    <div class="box">
+        <g-input value="默认" disable></g-input>
+        <g-input value="默认" readonly></g-input>
+        <g-input value="默认"></g-input>
+    </div>
+    <div class="box" >
+        <g-input value="默认" error="此项为 error"></g-input>
+    </div>
+    <div class="box" >
+        <g-input value="默认" success="此项为 success"></g-input>
+    </div>
 </div>
 
 <script src="./src/app.js"></script>
