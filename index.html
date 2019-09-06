@@ -63,15 +63,18 @@
         </g-button-group>
     </div>
     <div class="box">
-        <g-input value="默认" disable></g-input>
+        <g-input value="默认" disabled></g-input>
         <g-input value="默认" readonly></g-input>
         <g-input value="默认"></g-input>
+    </div>
+    <div class="box" >
+        <g-input value="默认" success="此项为 success"></g-input>
     </div>
     <div class="box" >
         <g-input value="默认" error="此项为 error"></g-input>
     </div>
     <div class="box" >
-        <g-input value="默认" success="此项为 success"></g-input>
+        <g-input value="默认" @change="inputChange"></g-input>
     </div>
 </div>
 
