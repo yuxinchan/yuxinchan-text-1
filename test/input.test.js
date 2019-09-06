@@ -7,7 +7,7 @@ Vue.config.devtools = false
 
 describe('Input', () => {
     //BDD 行为驱动测试
-    it('存在.', () => {
+    it('存在', () => {
         expect(Input).to.be.ok
     })
 
@@ -21,11 +21,11 @@ describe('Input', () => {
         it('接收 value', () => {
             vm = new Constructor({
                 propsData: {
-                    value: '1'
+                    value: 'hi'
                 }
             }).$mount()
             const inputElement = vm.$el.querySelector('input')
-            expect(inputElement.value).to.equal('1')
+            expect(inputElement.value).to.equal('hi')
         })
 
         it('接收 disabled', () => {
@@ -87,9 +87,14 @@ describe('Input', () => {
                     const callback = sinon.fake()
                     vm.$on(eventName, callback)
                     let event = new Event(eventName)
+                    Object.defineProperty(
+                        event, 'target', {
+                            value: {value: 'hi'}, enumerable: true
+                        }
+                    )
                     let inputElement = vm.$el.querySelector('input')
                     inputElement.dispatchEvent(event)
-                    expect(callback).to.have.been.calledWith(event)
+                    expect(callback).to.have.been.calledWith('hi')
                 })
         })
 
