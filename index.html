@@ -13,7 +13,7 @@
             box-sizing: border-box;
         }
 
-        :root {
+        html {
             --button-height: 32px;
             --font-size: 14px;
             --button-bg: white;
@@ -24,97 +24,27 @@
             --color: #333;
         }
 
-        #app {
-            margin: 20px;
-        }
-
         body {
             font-size: var(--font-size);
         }
     </style>
-    <style>
-        .box {
-            margin: 20px;
-        }
-    </style>
 </head>
 <body>
+<style>
+    .demo {
+        border: 1px solid #aaa;
+        min-height: 100px;
+    }
+</style>
 <div id="app">
-    <div>
-        <!--<g-row gutter="20">-->
-            <!--<g-col span="11">11</g-col>-->
-            <!--<g-col span="11">11</g-col>-->
-        <!--</g-row>-->
-        <!--<g-row gutter="20">-->
-            <!--<g-col span="8">8</g-col>-->
-            <!--<g-col span="8">8</g-col>-->
-            <!--<g-col span="8">8</g-col>-->
-        <!--</g-row>-->
-        <!--<g-row gutter="20">-->
-            <!--<g-col span="2">2</g-col>-->
-            <!--<g-col span="20" offset="2">20</g-col>-->
-        <!--</g-row>-->
-        <!--<g-row gutter="20">-->
-            <!--<g-col span="4">4</g-col>-->
-            <!--<g-col span="20">20</g-col>-->
-        <!--</g-row>-->
-        <g-row gutter="24">
-            <g-col span="24"
-                   :ipad="{span:8}"
-                   :narrow-pc="{span:4}"
-                   :pc="{span:2}"
-                   :wide-pc="{span:1}"
-            >
-                hi
-            </g-col>
-            <g-col span="24"
-                   :ipad="{span:16}"
-                   :narrow-pc="{span:20}"
-                   :pc="{span:22}"
-                   :wide-pc="{span:23}"
-            >
-                hi
-            </g-col>
-        </g-row>
-    </div>
-    <br>
-    <hr>
-    <div class="box">
-        <g-button :loading="loading1" @click="loading1 = !loading1">
-            加载
-        </g-button>
-        <g-button icon="settings" :loading="loading2" @click="loading2 = !loading2">
-            设置
-        </g-button>
-        <g-button icon="download" icon-position="right">
-            下载
-        </g-button>
-        <g-button-group>
-            <g-button icon="left">
-                上级
-            </g-button>
-            <g-button>
-                更多
-            </g-button>
-            <g-button icon="right" icon-position="right">
-                下级
-            </g-button>
-        </g-button-group>
-    </div>
-    <div class="box">
-        <g-input value="默认" disabled></g-input>
-        <g-input value="默认" readonly></g-input>
-        <g-input value="默认"></g-input>
-    </div>
-    <div class="box" >
-        <g-input value="默认" success="此项为 success"></g-input>
-    </div>
-    <div class="box" >
-        <g-input value="默认" error="此项为 error"></g-input>
-    </div>
-    <div class="box" >
-        <g-input v-model="message"></g-input>
-    </div>
+    <g-layout style="height: 100vh;">
+        <g-header class="demo">header</g-header>
+        <g-layout>
+            <g-sider class="demo">sider</g-sider>
+            <g-content class="demo">content</g-content>
+        </g-layout>
+        <g-footer class="demo">footer</g-footer>
+    </g-layout>
 </div>
 
 <script src="./src/app.js"></script>
