@@ -38,9 +38,18 @@ new Vue({
 
     },
     methods: {
-        showToast() {
+        showToastTop() {
+            this.showToast('top')
+        },
+        showToastMiddle() {
+            this.showToast('middle')
+        },
+        showToastBottom() {
+            this.showToast('bottom')
+        },
+        showToast(position) {
             this.$toast('<strong>This is message</strong>', {
-                position: 'middle',
+                position,
                 enableHtml: true,
                 closeButton: {
                     text: 'OK',
