@@ -39,7 +39,16 @@ new Vue({
     },
     methods: {
         showToast() {
-            this.$toast('Toast')
+            this.$toast('<strong>This is message</strong>', {
+                enableHtml: true,
+                closeButton: {
+                    text: '知道了',
+                    callback (toast) {
+                        toast.log()
+                        console.log('Closed')
+                    }
+                }
+            })
         }
     }
 })
