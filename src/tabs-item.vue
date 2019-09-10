@@ -37,7 +37,7 @@
         },
         methods: {
             xxx() {
-                this.eventBus.$emit('update:selected', [this.name, this])
+                this.eventBus.$emit('update:selected', this.name, this)
             }
         }
     }
