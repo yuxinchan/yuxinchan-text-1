@@ -30,34 +30,15 @@
     </style>
 </head>
 <body>
-<div id="app">
-    <g-tabs :selected.sync="selectedTab">
-        <g-tabs-head>
-            <template slot="actions">
-                <button>设置</button>
-            </template>
-            <g-tabs-item name="first">
-                <g-icon name="settings"></g-icon>选项1
-            </g-tabs-item>
-            <g-tabs-item name="second" disabled>
-                选项2
-            </g-tabs-item>
-            <g-tabs-item name="third">
-                选项3
-            </g-tabs-item>
-        </g-tabs-head>
-        <g-tabs-body>
-            <g-tabs-pane name="first">
-                内容1
-            </g-tabs-pane>
-            <g-tabs-pane name="second">
-                内容2
-            </g-tabs-pane>
-            <g-tabs-pane name="third">
-                内容3
-            </g-tabs-pane>
-        </g-tabs-body>
-    </g-tabs>
+<div id="app" style="padding-top: 100px; padding-left: 100px;">
+
+    <g-popover>
+        <template slot="content">
+            <div>Content of popover</div>
+        </template>
+        <button>Click</button>
+    </g-popover>
+
 </div>
 
 <script src="./src/app.js"></script>
