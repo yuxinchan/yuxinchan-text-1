@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52e198ae-c03f-4361-a492-042c4b541f03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/popover.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/popover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/popover.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/popover.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+            <state relative-caret-position="285">
+              <caret line="28" column="82" selection-start-line="28" selection-start-column="82" selection-end-line="28" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -103,10 +101,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="728" />
-    <option name="y" value="31" />
+    <option name="x" value="462" />
+    <option name="y" value="50" />
     <option name="width" value="1300" />
-    <option name="height" value="975" />
+    <option name="height" value="958" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -176,21 +174,7 @@
       <workItem from="1567924849252" duration="10703000" />
       <workItem from="1567990122305" duration="18714000" />
       <workItem from="1568076015257" duration="21038000" />
-      <workItem from="1568162709505" duration="2064000" />
-    </task>
-    <task id="LOCAL-00003" summary="安装 parcel">
-      <created>1567423250880</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1567423250880</updated>
-    </task>
-    <task id="LOCAL-00004" summary="加入 parcel，将 button 组件改为单文件组件">
-      <created>1567424602632</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1567424602632</updated>
+      <workItem from="1568162709505" duration="6140000" />
     </task>
     <task id="LOCAL-00005" summary="添加 icon 和 iconPosition 属性">
       <created>1567494452008</created>
@@ -521,14 +505,28 @@
       <option name="project" value="LOCAL" />
       <updated>1568108102903</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="创建 povover 组件">
+      <created>1568164986850</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1568164986850</updated>
+    </task>
+    <task id="LOCAL-00053" summary="实现最简单的 povover">
+      <created>1568167493080</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1568167493080</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124193000" />
+    <option name="totallyTimeSpent" value="128269000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="706" y="25" width="1040" height="780" extended-state="0" />
+    <frame x="768" y="34" width="1040" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -575,8 +573,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加 row 的 align=left/right/center 属性" />
-    <MESSAGE value="初步实现响应式" />
     <MESSAGE value="默认为 phone 样式" />
     <MESSAGE value="稍微重构一下" />
     <MESSAGE value="完成 col 的测试" />
@@ -600,7 +596,9 @@
     <MESSAGE value="完善 tab 的样式" />
     <MESSAGE value="支持 disabled 功能" />
     <MESSAGE value="添加部分测试用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加部分测试用例" />
+    <MESSAGE value="创建 povover 组件" />
+    <MESSAGE value="实现最简单的 povover" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现最简单的 povover" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -901,8 +899,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/popover.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+        <state relative-caret-position="285">
+          <caret line="28" column="82" selection-start-line="28" selection-start-column="82" selection-end-line="28" selection-end-column="82" />
         </state>
       </provider>
     </entry>
