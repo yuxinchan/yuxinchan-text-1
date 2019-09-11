@@ -31,33 +31,34 @@
 </head>
 <body>
 <div id="app">
-    <div style="overflow: hidden; padding: 100px;">
-        <g-popover position="left" trigger="click">
-            <template slot="content">
+    <div style="overflow: hidden; padding: 150px;">
+        <g-popover position="left">
+            <template slot="content" slot-scope="{close}">
                 <div>Content of popover on left</div>
+                <g-button @click="close">关闭</g-button>
             </template>
             <g-button>Click</g-button>
         </g-popover>
-        <g-popover position="top" trigger="click">
+        <g-popover position="top">
             <template slot="content">
                 <div>Content of popover on top</div>
             </template>
             <g-button>Click</g-button>
         </g-popover>
-        <g-popover position="bottom" trigger="click">
+        <g-popover position="bottom">
             <template slot="content">
                 <div>Content of popover on bottom</div>
             </template>
             <g-button>Click</g-button>
         </g-popover>
-        <g-popover position="right" trigger="click">
+        <g-popover position="right">
             <template slot="content">
                 <div>Content of popover on right</div>
             </template>
             <g-button>Click</g-button>
         </g-popover>
     </div>
-    <div style="overflow: hidden; padding: 100px;">
+    <div style="overflow: hidden; padding: 150px;">
         <g-popover position="left" trigger="hover">
             <template slot="content">
                 <div>Content of popover on left</div>

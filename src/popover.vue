@@ -2,7 +2,7 @@
     <div class="popover" ref="popover">
         <div ref="contentWrapper" class="content-wrapper" v-if="visible"
         :class="{[`position-${position}`]: true}">
-            <slot name="content"></slot>
+            <slot name="content" :close="close"></slot>
         </div>
         <span ref="triggerWrapper" style="display: inline-block">
             <slot></slot>
@@ -29,22 +29,6 @@
                 default: 'click',
                 validator(value) {
                     return ['click', 'hover'].indexOf(value) >= 0
-                }
-            }
-        },
-        computed: {
-            openEvent() {
-                if (this.trigger === 'click') {
-                    return 'click'
-                } else {
-                    return 'mouseenter'
-                }
-            },
-            closeEvent() {
-                if (this.trigger === 'click') {
-                    return 'click'
-                } else {
-                    return 'mouseleave'
                 }
             }
         },
@@ -216,7 +200,7 @@
             }
         }
         &.position-left {
-            max-width: 5em;
+            max-width: 7em;
             transform: translateX(-100%);
             margin-left: -13px;
             &::before, &::after {
@@ -236,7 +220,7 @@
             }
         }
         &.position-right {
-            max-width: 5em;
+            max-width: 7em;
             margin-left: 13px;
             &::before, &::after {
                 width: 5px;
