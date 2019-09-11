@@ -31,13 +31,14 @@
 </head>
 <body>
 <div id="app" style="padding-top: 100px; padding-left: 100px;">
-
-    <g-popover>
-        <template slot="content">
-            <div>Content of popover</div>
-        </template>
-        <button>Click</button>
-    </g-popover>
+    <div style="overflow: hidden" @click="yyy">
+        <g-popover>
+            <template slot="content">
+                <div>Content of popover</div>
+            </template>
+            <button>Click</button>
+        </g-popover>
+    </div>
 
 </div>
 
