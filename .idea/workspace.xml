@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52e198ae-c03f-4361-a492-042c4b541f03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/popover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/popover.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,11 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/popover.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+            <state relative-caret-position="228">
+              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tabs.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -96,19 +103,19 @@
         <option value="$PROJECT_DIR$/src/tabs-body.vue" />
         <option value="$PROJECT_DIR$/src/tabs-pane.vue" />
         <option value="$PROJECT_DIR$/src/tabs-head.vue" />
-        <option value="$PROJECT_DIR$/src/tabs.vue" />
         <option value="$PROJECT_DIR$/test/tabs.test.js" />
         <option value="$PROJECT_DIR$/src/tabs-item.vue" />
         <option value="$PROJECT_DIR$/test/tabs-item.test.js" />
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/popover.vue" />
+        <option value="$PROJECT_DIR$/src/tabs.vue" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="251" />
-    <option name="y" value="138" />
+    <option name="x" value="462" />
+    <option name="y" value="97" />
     <option name="width" value="1650" />
     <option name="height" value="959" />
   </component>
@@ -181,14 +188,7 @@
       <workItem from="1567990122305" duration="18714000" />
       <workItem from="1568076015257" duration="21038000" />
       <workItem from="1568162709505" duration="10022000" />
-      <workItem from="1568188528277" duration="3961000" />
-    </task>
-    <task id="LOCAL-00006" summary="验证 iconPosition 为 left 或 right">
-      <created>1567495012874</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1567495012875</updated>
+      <workItem from="1568188528277" duration="4483000" />
     </task>
     <task id="LOCAL-00007" summary="将 svg 代码整理到 icon.vue">
       <created>1567495764095</created>
@@ -526,14 +526,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568169123319</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="功能基本完成">
+      <created>1568192655599</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1568192655599</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136112000" />
+    <option name="totallyTimeSpent" value="136634000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="201" y="111" width="1320" height="767" extended-state="0" />
+    <frame x="745" y="87" width="1320" height="767" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -580,7 +587,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="稍微重构一下" />
     <MESSAGE value="完成 col 的测试" />
     <MESSAGE value="创建 layout content footer sider 组件" />
     <MESSAGE value="创建 layout content footer sider header 组件" />
@@ -605,7 +611,8 @@
     <MESSAGE value="创建 povover 组件" />
     <MESSAGE value="实现最简单的 povover" />
     <MESSAGE value="解决当容器有 overfloat: hidden 造成的 bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决当容器有 overfloat: hidden 造成的 bug" />
+    <MESSAGE value="功能基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="功能基本完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -873,13 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabs.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tabs-head.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -910,8 +910,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/popover.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        <state relative-caret-position="228">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabs.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
         </state>
       </provider>
     </entry>

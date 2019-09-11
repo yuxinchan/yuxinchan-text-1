@@ -31,21 +31,29 @@
                 eventBus:this.eventBus
             }
         },
-        mounted() {
-            if (this.$children.length === 0) {
-                console && console.warn &&
-                console.warn('tabs 的子组件应该为 tabs-head 和 tabs-body，但你没写子组件')
+        methods: {
+            checkChildren () {
+                if (this.$children.length === 0) {
+                    console && console.warn &&
+                    console.warn('tabs 的子组件应该为 tabs-head 和 tabs-body，但你没写子组件')
+                }
+            },
+            selectTab() {
+                this.$children.forEach((vm) => {
+                    if (vm.$options.name === 'GuluTabsHead') {
+                        vm.$children.forEach((childVm) => {
+                            if (childVm.$options.name === 'GuluTabsItem'
+                                && childVm.name === this.selected) {
+                                this.eventBus.$emit('update:selected', this.selected, childVm)
+                            }
+                        })
+                    }
+                })
             }
-            this.$children.forEach((vm) => {
-                if (vm.$options.name === 'GuluTabsHead') {
-                    vm.$children.forEach((childVm) => {
-                        if (childVm.$options.name === 'GuluTabsItem'
-                        && childVm.name === this.selected) {
-                            this.eventBus.$emit('update:selected', this.selected, childVm)
-                        }
-                    })
-                } 
-            })
+        },
+        mounted() {
+            this.checkChildren()
+            this.selectTab()
         }
     }
 </script>
