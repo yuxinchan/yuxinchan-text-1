@@ -8,7 +8,7 @@ Vue.config.devtools = false
 describe('Button', () => {
     //BDD 行为驱动测试
     it('存在', () => {
-        expect(Button).to.be.ok
+        expect(Button).to.exist
     })
     it('可以设置icon', () => {
         const Constructor = Vue.extend(Button)
