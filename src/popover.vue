@@ -29,24 +29,43 @@
             positionContent() {
                 const {contentWrapper, triggerWrapper} = this.$refs
                 document.body.appendChild(contentWrapper)
-                let {width, height, top, left} = triggerWrapper.getBoundingClientRect()
-                if (this.position === 'top') {
-                    contentWrapper.style.left = left + window.scrollX + 'px'
-                    contentWrapper.style.top = top + window.scrollY + 'px'
-                } else if (this.position === 'bottom') {
-                    contentWrapper.style.left = left + window.scrollX + 'px'
-                    contentWrapper.style.top = top + height + window.scrollY + 'px'
-                } else if (this.position === 'left') {
-                    contentWrapper.style.left = left + window.scrollX + 'px'
-                    let {height: height2} = contentWrapper.getBoundingClientRect()
-                    contentWrapper.style.top = top + window.scrollY +
-                        (height - height2) / 2 + 'px'
-                } else {
-                    contentWrapper.style.left = left + width + window.scrollX + 'px'
-                    let {height: height2} = contentWrapper.getBoundingClientRect()
-                    contentWrapper.style.top = top + window.scrollY +
-                        (height - height2) / 2 + 'px'
+                const {width, height, top, left} = triggerWrapper.getBoundingClientRect()
+                const {height: height2} = contentWrapper.getBoundingClientRect()
+                let positions = {
+                    top: {
+                        top: top + window.scrollY,
+                        left: left + window.scrollX
+                    },
+                    bottom: {
+                        top: top + height + window.scrollY,
+                        left: left + window.scrollX
+                    },
+                    left: {
+                        top: top + window.scrollY + (height - height2) / 2,
+                        left: left + window.scrollX
+                    },
+                    right: {
+                        top: top + window.scrollY + (height - height2) / 2,
+                        left: left + width + window.scrollX
+                    }
                 }
+                contentWrapper.style.left = positions[this.position].left + 'px'
+                contentWrapper.style.top = positions[this.position].top + 'px'
+                // if (this.position === 'top') {
+                //     contentWrapper.style.left = left + window.scrollX + 'px'
+                //     contentWrapper.style.top = top + window.scrollY + 'px'
+                // } else if (this.position === 'bottom') {
+                //     contentWrapper.style.left = left + window.scrollX + 'px'
+                //     contentWrapper.style.top = top + height + window.scrollY + 'px'
+                // } else if (this.position === 'left') {
+                //     contentWrapper.style.left = left + window.scrollX + 'px'
+                //     contentWrapper.style.top = top + window.scrollY +
+                //         (height - height2) / 2 + 'px'
+                // } else {
+                //     contentWrapper.style.left = left + width + window.scrollX + 'px'
+                //     contentWrapper.style.top = top + window.scrollY +
+                //         (height - height2) / 2 + 'px'
+                // }
             },
             onClickDocument(e) {
                 if (this.$refs.popover  &&
