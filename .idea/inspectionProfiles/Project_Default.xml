@@ -1,0 +1,39 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="25">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="g-input" />
+            <item index="7" class="java.lang.String" itemvalue="g-button-group" />
+            <item index="8" class="java.lang.String" itemvalue="g-button" />
+            <item index="9" class="java.lang.String" itemvalue="g-row" />
+            <item index="10" class="java.lang.String" itemvalue="g-col" />
+            <item index="11" class="java.lang.String" itemvalue="g-header" />
+            <item index="12" class="java.lang.String" itemvalue="g-layout" />
+            <item index="13" class="java.lang.String" itemvalue="g-content" />
+            <item index="14" class="java.lang.String" itemvalue="g-sider" />
+            <item index="15" class="java.lang.String" itemvalue="g-footer" />
+            <item index="16" class="java.lang.String" itemvalue="g-tabs" />
+            <item index="17" class="java.lang.String" itemvalue="g-tabs-item" />
+            <item index="18" class="java.lang.String" itemvalue="g-tabs-head" />
+            <item index="19" class="java.lang.String" itemvalue="g-tabs-pane" />
+            <item index="20" class="java.lang.String" itemvalue="g-tabs-body" />
+            <item index="21" class="java.lang.String" itemvalue="g-icon" />
+            <item index="22" class="java.lang.String" itemvalue="g-popover" />
+            <item index="23" class="java.lang.String" itemvalue="g-collapse-item" />
+            <item index="24" class="java.lang.String" itemvalue="g-collapse" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
