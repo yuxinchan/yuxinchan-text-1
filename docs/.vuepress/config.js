@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/yuxinchan-text-1/',
     title: 'Gulu UI',
     description: '一个好用的UI框架',
     themeConfig: {
