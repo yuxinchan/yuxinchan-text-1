@@ -77,6 +77,15 @@ new Vue({
                     {name: '仓山'}
                 ]
             }]
+        },{
+            name: '安徽',
+            children: [{
+                name: '合肥',
+                children: [
+                    {name: '瑶海'},
+                    {name: '庐阳'}
+                ]
+            }]
         }]
     },
     created() {
