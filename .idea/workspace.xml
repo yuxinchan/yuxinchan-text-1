@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="52e198ae-c03f-4361-a492-042c4b541f03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cascader-items.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/cascader-items.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cascader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/cascader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,17 +20,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/demo.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="456">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cascader.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="40" selection-end-column="13" />
+            <state relative-caret-position="377">
+              <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -43,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cascader-items.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="-207">
               <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
             </state>
           </provider>
@@ -120,15 +124,15 @@
         <option value="$PROJECT_DIR$/src/icon.vue" />
         <option value="$PROJECT_DIR$/src/_var.scss" />
         <option value="$PROJECT_DIR$/src.js" />
-        <option value="$PROJECT_DIR$/src/cascader.vue" />
-        <option value="$PROJECT_DIR$/src/demo.vue" />
         <option value="$PROJECT_DIR$/src/cascader-items.vue" />
+        <option value="$PROJECT_DIR$/src/demo.vue" />
+        <option value="$PROJECT_DIR$/src/cascader.vue" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="688" />
-    <option name="y" value="23" />
+    <option name="x" value="552" />
+    <option name="y" value="90" />
     <option name="width" value="1489" />
     <option name="height" value="960" />
   </component>
@@ -221,14 +225,7 @@
       <workItem from="1568348352221" duration="9224000" />
       <workItem from="1568421374092" duration="1440000" />
       <workItem from="1568422941763" duration="22683000" />
-      <workItem from="1568516186588" duration="6261000" />
-    </task>
-    <task id="LOCAL-00032" summary="基本功能完成">
-      <created>1567937859411</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1567937859411</updated>
+      <workItem from="1568516186588" duration="7791000" />
     </task>
     <task id="LOCAL-00033" summary="添加简单动画">
       <created>1567939222021</created>
@@ -566,14 +563,22 @@
       <option name="project" value="LOCAL" />
       <updated>1568532935523</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="更新当前等级数据的时候，删除后面的等级数据">
+      <created>1568533233022</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1568533233022</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211850000" />
+    <option name="totallyTimeSpent" value="213380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="551" y="19" width="1191" height="768" extended-state="0" />
+    <frame x="642" y="138" width="1191" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="npm" order="1" side_tool="true" />
@@ -601,7 +606,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="支持 disabled 功能" />
     <MESSAGE value="添加部分测试用例" />
     <MESSAGE value="创建 povover 组件" />
     <MESSAGE value="实现最简单的 povover" />
@@ -626,7 +630,8 @@
     <MESSAGE value="确定如何渲染内容" />
     <MESSAGE value="改用 vue-cli 构建项目" />
     <MESSAGE value="改为单向数据流" />
-    <option name="LAST_COMMIT_MESSAGE" value="改为单向数据流" />
+    <MESSAGE value="更新当前等级数据的时候，删除后面的等级数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新当前等级数据的时候，删除后面的等级数据" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -985,24 +990,27 @@
     <entry file="file://$PROJECT_DIR$/babel.config.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cascader-items.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207">
+          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/demo.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="456">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cascader.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cascader-items.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+        <state relative-caret-position="377">
+          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
         </state>
       </provider>
     </entry>
