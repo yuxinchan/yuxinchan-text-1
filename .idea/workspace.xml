@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52e198ae-c03f-4361-a492-042c4b541f03" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cascader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/cascader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,19 +17,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/demo.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="396">
+              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#502#535#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/db.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="121" lean-forward="true" selection-start-line="3" selection-start-column="121" selection-end-line="3" selection-end-column="121" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cascader.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="377">
@@ -68,6 +78,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>{</find>
+      <find>&quot;k4&quot;:&quot;&quot;,</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -76,7 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/row.test.js" />
         <option value="$PROJECT_DIR$/test/col.test.js" />
         <option value="$PROJECT_DIR$/src/header.vue" />
         <option value="$PROJECT_DIR$/src/footer.vue" />
@@ -125,14 +135,15 @@
         <option value="$PROJECT_DIR$/src/_var.scss" />
         <option value="$PROJECT_DIR$/src.js" />
         <option value="$PROJECT_DIR$/src/cascader-items.vue" />
-        <option value="$PROJECT_DIR$/src/demo.vue" />
         <option value="$PROJECT_DIR$/src/cascader.vue" />
+        <option value="$PROJECT_DIR$/src/db.js" />
+        <option value="$PROJECT_DIR$/src/demo.vue" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="552" />
-    <option name="y" value="90" />
+    <option name="x" value="350" />
+    <option name="y" value="48" />
     <option name="width" value="1489" />
     <option name="height" value="960" />
   </component>
@@ -225,14 +236,7 @@
       <workItem from="1568348352221" duration="9224000" />
       <workItem from="1568421374092" duration="1440000" />
       <workItem from="1568422941763" duration="22683000" />
-      <workItem from="1568516186588" duration="7791000" />
-    </task>
-    <task id="LOCAL-00033" summary="添加简单动画">
-      <created>1567939222021</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1567939222021</updated>
+      <workItem from="1568516186588" duration="10350000" />
     </task>
     <task id="LOCAL-00034" summary="添加 toast 和 plugin">
       <created>1567994769654</created>
@@ -570,14 +574,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568533233022</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="完成基本样式">
+      <created>1568534826556</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1568534826586</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213380000" />
+    <option name="totallyTimeSpent" value="215939000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="642" y="138" width="1191" height="768" extended-state="0" />
+    <frame x="631" y="44" width="1191" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -599,14 +610,13 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.23742276" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.23742276" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加部分测试用例" />
     <MESSAGE value="创建 povover 组件" />
     <MESSAGE value="实现最简单的 povover" />
     <MESSAGE value="解决当容器有 overfloat: hidden 造成的 bug" />
@@ -631,7 +641,8 @@
     <MESSAGE value="改用 vue-cli 构建项目" />
     <MESSAGE value="改为单向数据流" />
     <MESSAGE value="更新当前等级数据的时候，删除后面的等级数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新当前等级数据的时候，删除后面的等级数据" />
+    <MESSAGE value="完成基本样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成基本样式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -644,16 +655,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/toast.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-          <folding>
-            <element signature="e#28#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/tabs.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -997,20 +998,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cascader.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="121" lean-forward="true" selection-start-line="3" selection-start-column="121" selection-end-line="3" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#502#535#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -72,6 +72,7 @@
         .left {
             padding: .3em 0;
             height: 100%;
+            overflow: auto;
         }
         .right {
             border-left: 1px solid $border-color-light;
