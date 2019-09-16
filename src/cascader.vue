@@ -6,6 +6,7 @@
         <div class="popover-wrapper" v-if="popoverVisible">
             <cascader-items
                     :items="source" class="popover"
+                    :loadData="loadData"
                     :height="popoverHeight"
                     :selected="selected"
                     @update:selected="onUpdateSelected"
@@ -82,7 +83,9 @@
                     toUpdate.children = result
                     this.$emit('update:source', copy)
                 }
-                this.loadData(lastItem, updateSource)
+                if (!lastItem.isLeaf) {
+                    this.loadData && this.loadData(lastItem, updateSource)
+                }
             }
         },
         computed: {

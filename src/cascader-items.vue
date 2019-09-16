@@ -2,8 +2,8 @@
     <div class="cascaderItem" :style="{height: height}">
         <div class="left">
             <div class="label" v-for="item in items" @click="onClickLabel(item)">
-                {{item.name}}
-                <icon class="icon" v-if="item.children" name="right"> > </icon>
+                <span class="name">{{item.name}}</span>
+                <icon class="icon" v-if="rightArrowVisible(item)" name="right"> > </icon>
             </div>
         </div>
         <div class="right" v-if="rightItems">
@@ -11,6 +11,7 @@
                     ref="right" :items="rightItems"
                     :height="height" :level="level+1"
                     :selected="selected"
+                    :loadData="loadData"
                     @update:selected="onUpdateSelected"
             ></gulu-cascader-items>
         </div>
@@ -33,6 +34,9 @@
                 type: Array,
                 default: () => {return []}
             },
+            loadData: {
+                type: Function
+            },
             level: {
                 type: Number,
                 default: 0
@@ -46,16 +50,12 @@
                         return selected[0].children
                     }
                 }
-
-                let currentSelected = this.selected[this.level]
-                if (currentSelected && currentSelected.children) {
-                    return currentSelected.children
-                } else {
-                    return null
-                }
             }
         },
         methods: {
+            rightArrowVisible(item) {
+                return this.loadData ? !item.isLeaf : item.children
+            },
             onClickLabel(item) {
                 let copy = JSON.parse(JSON.stringify(this.selected))
                 copy[this.level] = item
@@ -86,11 +86,20 @@
             height: 100%;
         }
         .label {
-            padding: .3em 1em;
+            padding: .5em 1em;
             display: flex;
             align-items: center;
+            &:hover {
+                background: $grey;
+                cursor: pointer;
+            }
+            > .name {
+                line-height: $font-size;
+                margin-right: .5em;
+                user-select: none;
+            }
             .icon {
-                margin-left: 1em;
+                margin-left: auto;
                 transform: scale(0.8);
             }
         }
