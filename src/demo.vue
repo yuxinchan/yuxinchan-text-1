@@ -5,9 +5,10 @@
         <p>{{selected && selected[2] && selected[2].name || '未选择'}}</p>
         <div style="padding: 20px;">
             <g-cascader
-                    :source="source"
+                    :source.sync="source"
                     popover-height="200px"
                     :selected.sync="selected"
+                    :load-data="loadData"
             ></g-cascader>
         </div>
     </div>
@@ -18,9 +19,13 @@
 
 
     function ajax(parentId = 0) {
-        return db.filter((item) => item.parent_id == parentId)
+        return new Promise((success, fail) => {
+            setTimeout(() => {
+                let result = db.filter((item) => item.parent_id == parentId)
+                success(result)
+            }, 200)
+        })
     }
-    console.log(ajax())
 
     export default {
         name: 'demo',
@@ -30,7 +35,26 @@
         data(){
             return {
                 selected: [],
-                source: ajax()
+                source: []
+            }
+        },
+        created() {
+            ajax(0).then(result => {
+                this.source = result
+            })
+        },
+        methods: {
+            loadData({id}, updateSource) {
+                ajax(id).then(result => {
+                    updateSource(result)
+                })
+            },
+            xxx() {
+                ajax(this.selected[0].id).then(result => {
+                    let lastLevelSelected = this.source.filter(item => item.id === this.selected[0].id)[0]
+                    //
+                    this.$set(lastLevelSelected, 'children', result)
+                })
             }
         }
     }
