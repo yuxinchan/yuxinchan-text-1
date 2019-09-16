@@ -3,7 +3,14 @@
         <div class="left">
             <div class="label" v-for="item in items" @click="onClickLabel(item)">
                 <span class="name">{{item.name}}</span>
-                <icon class="icon" v-if="rightArrowVisible(item)" name="right"> > </icon>
+                <span class="icons">
+                    <template v-if="item.name === loadingItem.name">
+                        <icon class="loading" name="loading"></icon>
+                    </template>
+                    <template v-else>
+                        <icon v-if="rightArrowVisible(item)" name="right"></icon>
+                    </template>
+                </span>
             </div>
         </div>
         <div class="right" v-if="rightItems">
@@ -11,7 +18,8 @@
                     ref="right" :items="rightItems"
                     :height="height" :level="level+1"
                     :selected="selected"
-                    :loadData="loadData"
+                    :load-data="loadData"
+                    :loading-item="loadingItem"
                     @update:selected="onUpdateSelected"
             ></gulu-cascader-items>
         </div>
@@ -29,6 +37,10 @@
             },
             height: {
                 type: String
+            },
+            loadingItem: {
+                type: Object,
+                default: () => ({})
             },
             selected: {
                 type: Array,
@@ -80,7 +92,12 @@
             padding: .3em 0;
             height: 100%;
             overflow: auto;
+            /*-ms-overflow-style: none;           //IE 10+ 隐藏滚动条*/
+            /*overflow: -moz-scrollbars-none;     //Firefox 隐藏滚动条*/
         }
+        /*.left::-webkit-scrollbar {              //chrome 和 Safari 隐藏滚动条*/
+            /*display: none;*/
+        /*}*/
         .right {
             border-left: 1px solid $border-color-light;
             height: 100%;
@@ -91,17 +108,22 @@
             align-items: center;
             white-space: nowrap;
             cursor: pointer;
+            text-align: center;
             &:hover {
                 background: $grey;
             }
-            > .name {
-                line-height: $font-size;
+            .name {
                 margin-right: .5em;
                 user-select: none;
             }
-            .icon {
+            > .icons {
+                display: flex;
+                align-items: center;
                 margin-left: auto;
                 transform: scale(0.8);
+                .loading {
+                    animation: spin 2s infinite linear;
+                }
             }
         }
     }

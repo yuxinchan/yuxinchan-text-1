@@ -5,7 +5,7 @@
                     :source.sync="source"
                     popover-height="200px"
                     :selected.sync="selected"
-                    :loadData="loadData"
+                    :load-data="loadData"
             ></g-cascader>
         </div>
     </div>
@@ -29,7 +29,7 @@
                     }
                 })
                 success(result)
-            }, 200)
+            }, 3000)
         })
     }
 
@@ -57,13 +57,6 @@
             loadData({id}, updateSource) {
                 ajax(id).then(result => {
                     updateSource(result)
-                })
-            },
-            xxx() {
-                ajax(this.selected[0].id).then(result => {
-                    let lastLevelSelected = this.source.filter(item => item.id === this.selected[0].id)[0]
-                    //
-                    this.$set(lastLevelSelected, 'children', result)
                 })
             }
         }
