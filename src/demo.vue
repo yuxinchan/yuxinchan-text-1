@@ -1,8 +1,5 @@
 <template>
     <div>
-        <p>{{selected && selected[0] && selected[0].name || '未选择'}}</p>
-        <p>{{selected && selected[1] && selected[1].name || '未选择'}}</p>
-        <p>{{selected && selected[2] && selected[2].name || '未选择'}}</p>
         <div style="padding: 20px;">
             <g-cascader
                     :source.sync="source"
@@ -16,6 +13,7 @@
 <script>
     import Cascader from './cascader'
     import db from './db'
+    import Popover from './popover'
 
 
     function ajax(parentId = 0) {
@@ -37,7 +35,8 @@
     export default {
         name: 'demo',
         components: {
-            'g-cascader': Cascader
+            'g-cascader': Cascader,
+            'g-popover': Popover
         },
         data(){
             return {
