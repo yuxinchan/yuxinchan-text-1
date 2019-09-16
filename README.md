@@ -1,34 +1,63 @@
-# hello-world
+# 一个 Vue UI 组件
 
-## Project setup
-```
-npm install
-```
+[![Build Status](https://www.travis-ci.org/yuxinchan/yuxinchan-text-1.svg?branch=master)](https://www.travis-ci.org/yuxinchan/yuxinchan-text-1)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 介绍
 
-### Compiles and minifies for production
-```
-npm run build
-```
+这是一个 按钮 UI 框架
 
-### Run your tests
-```
-npm run test
-```
+## 开始使用
 
-### Lints and fixes files
-```
-npm run lint
-```
+1. 添加 CSS 样式
 
-### Run your unit tests
-```
-npm run test:unit
-```
+    使用本框架前，请在 CSS 中开启 border-box
+    
+    ```
+    *,*::before,*::after{box-sizing: border-box;}
+    ```
+    IE 8 及以上的浏览器都支持以上样式
+    
+    另外你还需设置默认颜色等变量（后续会改为 SCSS 变量）
+    ```
+    html {
+        --button-height: 32px;
+        --font-size: 14px;
+        --button-bg: white;
+        --button-active-bg: #eee;
+        --border-radius: 4px;
+        --border-color: #999;
+        --border-color-hover: #666;
+        --color: #333;
+    }
+    ```
+    IE 15 及以上的浏览器都支持以上样式
+    
+2. 安装
+    ```
+       npm i --save yuxinchan-gulu
+    ```
+ 
+3. 引入
+    ```
+    import {Button, ButtonGroup, Icon} from 'yuxinchan-gulu'
+    import 'yuxinchan-gulu/dist/index.css'
+    
+    export default {
+        name: 'app',
+        components: {
+            HelloWorld,
+            'g-button': Button,
+            'g-icon': Icon
+        }
+    }
+    ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 文档
+
+## 提问
+
+## 变更记录
+
+## 联系方式
+
+## 贡献代码

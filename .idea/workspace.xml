@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="52e198ae-c03f-4361-a492-042c4b541f03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/button.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/col.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/col.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/input.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/popover.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/popover.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/row.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/row.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tabs-body.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs-body.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tabs-head.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs-head.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tabs-item.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs-item.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tabs-pane.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs-pane.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tabs.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/toast.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/toast.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/button.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/button.spec.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -127,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="383" />
     <option name="y" value="27" />
     <option name="width" value="1454" />
@@ -230,14 +218,7 @@
       <workItem from="1568421374092" duration="1440000" />
       <workItem from="1568422941763" duration="22683000" />
       <workItem from="1568516186588" duration="17136000" />
-      <workItem from="1568594859568" duration="20548000" />
-    </task>
-    <task id="LOCAL-00040" summary="优化三种动画">
-      <created>1568020262167</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1568020262177</updated>
+      <workItem from="1568594859568" duration="21026000" />
     </task>
     <task id="LOCAL-00041" summary="完成 toast 测试用例">
       <created>1568023487769</created>
@@ -575,14 +556,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568626536137</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="更新部分单元测试">
+      <created>1568629542518</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1568629542518</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243273000" />
+    <option name="totallyTimeSpent" value="243751000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="307" y="22" width="1163" height="800" extended-state="0" />
+    <frame x="307" y="22" width="1163" height="800" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.24920635" />
@@ -633,7 +621,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="四个方向的位置" />
     <MESSAGE value="使用表驱动编程重构代码" />
     <MESSAGE value="支持两种事件触发" />
     <MESSAGE value="解决抖动 bug" />
@@ -658,7 +645,8 @@
     <MESSAGE value="点击组件外面时调用 close" />
     <MESSAGE value="添加 click-outside 指令" />
     <MESSAGE value="更新单元测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新单元测试" />
+    <MESSAGE value="更新部分单元测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新部分单元测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
