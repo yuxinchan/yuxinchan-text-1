@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52e198ae-c03f-4361-a492-042c4b541f03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -52,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="76">
+              <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -238,21 +237,7 @@
       <workItem from="1568516186588" duration="17136000" />
       <workItem from="1568594859568" duration="21026000" />
       <workItem from="1568636237814" duration="414000" />
-      <workItem from="1568684194640" duration="2342000" />
-    </task>
-    <task id="LOCAL-00042" summary="添加 tabs 相关组件和基本 props">
-      <created>1568081690514</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1568081690514</updated>
-    </task>
-    <task id="LOCAL-00043" summary="tabs 实现可切换">
-      <created>1568086865519</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1568086865519</updated>
+      <workItem from="1568684194640" duration="2629000" />
     </task>
     <task id="LOCAL-00044" summary="增大 tab item 可点击区域">
       <created>1568097732002</created>
@@ -583,14 +568,29 @@
       <option name="project" value="LOCAL" />
       <updated>1568636302102</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="nodejs 版本修改">
+      <created>1568686715448</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1568686715448</updated>
+    </task>
+    <task id="LOCAL-00092" summary="nodejs 版本修改">
+      <created>1568686866220</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1568686866221</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246507000" />
+    <option name="totallyTimeSpent" value="246794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="275" y="10" width="1164" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.24920635" />
       <window_info id="npm" order="1" side_tool="true" />
@@ -640,7 +640,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="支持两种事件触发" />
     <MESSAGE value="解决抖动 bug" />
     <MESSAGE value="添加插槽的 close API" />
     <MESSAGE value="提交 popover 第一个测试用例" />
@@ -665,7 +664,8 @@
     <MESSAGE value="更新单元测试" />
     <MESSAGE value="更新部分单元测试" />
     <MESSAGE value="add yarn test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add yarn test" />
+    <MESSAGE value="nodejs 版本修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="nodejs 版本修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -999,8 +999,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="76">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
     </entry>
