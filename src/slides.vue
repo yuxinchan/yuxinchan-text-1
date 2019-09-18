@@ -11,8 +11,15 @@
                 <slot></slot>
             </div>
         </div>
+        <span class="g-slides-left" @click="onClickPrev">
+            <g-icon name="left" fill="#fff"></g-icon>
+        </span>
+        <span class="g-slides-right" @click="onClickNext">
+            <g-icon name="right" fill="#fff"></g-icon>
+        </span>
         <div class="g-slides-dots">
             <span v-for="n in childrenLength"
+                  class="tinyBlock"
                   :class="{active: selectedIndex === n-1}"
                   @click="select(n-1)"
             ></span>
@@ -21,7 +28,9 @@
 </template>
 
 <script>
+    import GIcon from './icon'
     export default {
+        components: {GIcon},
         props: {
             selected: {
                 type: String
@@ -37,13 +46,13 @@
                 lastSelectedIndex: undefined,
                 timerId: undefined,
                 startTouch: undefined,
-                touchMoving: false
+                letMoving: false
             }
         },
         mounted() {
             this.updateChildren()
             this.playAutomatically()
-            this.childrenLength = this.$children.length
+            this.childrenLength = this.items.length
         },
         updated() {
             this.updateChildren()
@@ -54,7 +63,10 @@
                 return index === -1 ? 0 : index
             },
             names() {
-                return this.$children.map(vm => vm.name)
+                return this.items.map(vm => vm.name)
+            },
+            items() {
+                return this.$children.filter(vm => vm.$options.name === 'GuluSlidesItem')
             }
         },
         methods: {
@@ -66,12 +78,11 @@
             },
             onTouchStart(e) {
                 this.pause()
-                this.touchMoving = true
+                this.letMoving = true
                 if (e.touches.length > 1) {return}
                 this.startTouch = e.touches[0]
             },
             onTouchMove() {
-
             },
             onTouchEnd(e) {
                 let endTouch = e.changedTouches[0]
@@ -90,6 +101,14 @@
                 this.$nextTick(() => {
                     this.playAutomatically()
                 })
+            },
+            onClickPrev() {
+                this.letMoving = true
+                this.select(this.selectedIndex - 1)
+            },
+            onClickNext() {
+                this.letMoving = true
+                this.select(this.selectedIndex + 1)
             },
             playAutomatically() {
                 if (this.timerId) {return}
@@ -112,18 +131,18 @@
                 this.$emit('update:selected', this.names[newIndex])
             },
             getSelected() {
-                let first = this.$children[0]
+                let first = this.items[0]
                 return this.selected || first.name
             },
             updateChildren() {
                 let selected = this.getSelected()
-                this.$children.forEach((vm) => {
+                this.items.forEach((vm) => {
                     let reverse = this.selectedIndex > this.lastSelectedIndex ? false : true
-                    if (this.timerId || this.touchMoving) {
-                        if (this.lastSelectedIndex === this.$children.length - 1 && this.selectedIndex === 0) {
+                    if (this.timerId || this.letMoving) {
+                        if (this.lastSelectedIndex === this.items.length - 1 && this.selectedIndex === 0) {
                             reverse = false
                         }
-                        if (this.lastSelectedIndex === 0 && this.selectedIndex === this.$children.length - 1) {
+                        if (this.lastSelectedIndex === 0 && this.selectedIndex === this.items.length - 1) {
                             reverse = true
                         }
                     }
@@ -132,7 +151,7 @@
                         vm.selected = selected
                     })
                 })
-                this.touchMoving = false
+                this.letMoving = false
             }
         }
     }
@@ -141,6 +160,7 @@
 <style lang="scss" scoped>
     .g-slides {
         position: relative;
+        min-width: 12em;
         &-window {
             overflow: hidden;
         }
@@ -152,10 +172,10 @@
             left: 50%;
             transform: translateX(-50%);
             bottom: 2em;
-            > span {
+            > .tinyBlock {
                 display: inline-block;
                 margin: 0 0.5em;
-                width: 1.5em;
+                width: 1em;
                 height: 0.5em;
                 background: #666;
                 &:hover {
@@ -168,6 +188,21 @@
                     }
                 }
             }
+        }
+        &-left, &-right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            > .g-icon {
+                width: 2em;
+                height: 2em;
+            }
+        }
+        &-left {
+            left: 1em;
+        }
+        &-right {
+            right: 1em;
         }
     }
 </style>
