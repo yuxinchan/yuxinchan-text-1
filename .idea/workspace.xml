@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="52e198ae-c03f-4361-a492-042c4b541f03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/slides.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/slides.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/demo.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+            <state relative-caret-position="418">
+              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -29,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/slides.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="122" column="33" lean-forward="true" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
+            <state relative-caret-position="171">
+              <caret line="117" column="30" lean-forward="true" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -41,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/slides-item.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
+            <state relative-caret-position="646">
               <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
             </state>
           </provider>
@@ -117,14 +116,14 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/slides-item.vue" />
-        <option value="$PROJECT_DIR$/src/slides.vue" />
         <option value="$PROJECT_DIR$/src/demo.vue" />
+        <option value="$PROJECT_DIR$/src/slides.vue" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="765" />
-    <option name="y" value="2" />
+    <option name="x" value="527" />
+    <option name="y" value="16" />
     <option name="width" value="1455" />
     <option name="height" value="1000" />
   </component>
@@ -234,21 +233,7 @@
       <workItem from="1568636237814" duration="414000" />
       <workItem from="1568684194640" duration="3253000" />
       <workItem from="1568764466047" duration="6805000" />
-      <workItem from="1568773168260" duration="8341000" />
-    </task>
-    <task id="LOCAL-00046" summary="触发 update:selected 事件的时候添加一个 item 数据">
-      <created>1568099793098</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1568099793098</updated>
-    </task>
-    <task id="LOCAL-00047" summary="tab 切换动画完成">
-      <created>1568101902584</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1568101902584</updated>
+      <workItem from="1568773168260" duration="11363000" />
     </task>
     <task id="LOCAL-00048" summary="完善 tab 的样式">
       <created>1568102222237</created>
@@ -579,15 +564,28 @@
       <option name="project" value="LOCAL" />
       <updated>1568780437089</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="设置切换小方块">
+      <created>1568782216510</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1568782216510</updated>
+    </task>
+    <task id="LOCAL-00096" summary="支持手机的左右滑动">
+      <created>1568784594976</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1568784594976</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262564000" />
+    <option name="totallyTimeSpent" value="265586000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="662" y="10" width="1164" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="422" y="13" width="1164" height="800" extended-state="0" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.24920635" />
       <window_info id="npm" order="1" side_tool="true" />
@@ -637,8 +635,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="提交 popover 第一个测试用例" />
-    <MESSAGE value="有一个测试用例未实现，已跳过" />
     <MESSAGE value="collapse 基本样式和基本功能完成" />
     <MESSAGE value="添加 single 选项" />
     <MESSAGE value="可以设置默认 selected" />
@@ -662,7 +658,9 @@
     <MESSAGE value="nodejs 版本修改" />
     <MESSAGE value="创建并基本实现 slides 动画" />
     <MESSAGE value="实现无缝切换" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现无缝切换" />
+    <MESSAGE value="设置切换小方块" />
+    <MESSAGE value="支持手机的左右滑动" />
+    <option name="LAST_COMMIT_MESSAGE" value="支持手机的左右滑动" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -977,27 +975,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/slides-item.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
+        <state relative-caret-position="646">
           <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/slides.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="122" column="33" lean-forward="true" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="117" column="30" lean-forward="true" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
         </state>
       </provider>
     </entry>
