@@ -9,9 +9,7 @@
             <span v-for="n in childrenLength"
                   :class="{active: selectedIndex === n-1}"
                   @click="select(n-1)"
-            >
-                {{n-1}}
-            </span>
+            ></span>
         </div>
     </div>
 </template>
@@ -61,7 +59,7 @@
                 if (this.timerId) {return}
                 let run = () => {
                     let index = this.names.indexOf(this.getSelected())
-                    let newIndex = index - 1
+                    let newIndex = index + 1
                     if (newIndex === -1) {newIndex = this.names.length - 1}
                     if (newIndex === this.names.length) {newIndex = 0}
                     this.select(newIndex)
@@ -85,11 +83,13 @@
                 let selected = this.getSelected()
                 this.$children.forEach((vm) => {
                     let reverse = this.selectedIndex > this.lastSelectedIndex ? false : true
-                    if (this.lastSelectedIndex === this.$children.length - 1 && this.selectedIndex === 0) {
-                        reverse = false
-                    }
-                    if (this.lastSelectedIndex === 0 && this.selectedIndex === this.$children.length - 1) {
-                        reverse = true
+                    if (this.timerId) {
+                        if (this.lastSelectedIndex === this.$children.length - 1 && this.selectedIndex === 0) {
+                            reverse = false
+                        }
+                        if (this.lastSelectedIndex === 0 && this.selectedIndex === this.$children.length - 1) {
+                            reverse = true
+                        }
                     }
                     vm.reverse = reverse
                     this.$nextTick(() => {
@@ -103,6 +103,7 @@
 
 <style lang="scss" scoped>
     .g-slides {
+        position: relative;
         &-window {
             overflow: hidden;
         }
@@ -110,9 +111,24 @@
             position: relative;
         }
         &-dots {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 2em;
             > span {
+                display: inline-block;
+                margin: 0 0.5em;
+                width: 1.5em;
+                height: 0.5em;
+                background: #666;
+                &:hover {
+                    cursor: pointer;
+                }
                 &.active {
                     background: #fff;
+                    &:hover {
+                        cursor: default;
+                    }
                 }
             }
         }

@@ -26,7 +26,7 @@
         },
         data(){
             return {
-                selected: '1'
+                selected: undefined
             }
         },
         mounted() {
@@ -43,10 +43,11 @@
     .box {
         width: 100%;
         height: 350px;
-        background: #ddd;
+        background: #333;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 50px;
+        color: #fff;
     }
 </style>
