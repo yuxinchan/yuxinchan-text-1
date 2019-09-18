@@ -1,64 +1,36 @@
 <template>
-    <div>
-        <div style="padding: 20px;">
-            <g-cascader
-                    :source.sync="source"
-                    popover-height="200px"
-                    :selected.sync="selected"
-                    :load-data="loadData"
-            ></g-cascader>
-        </div>
+    <div style="padding: 50px;">
+        <g-slides width="300px" height="200px" :selected.sync="selected">
+            <g-slides-item name="1">
+                <div class="box">1</div>
+            </g-slides-item>
+            <g-slides-item name="2">
+                <div class="box">2</div>
+            </g-slides-item>
+            <g-slides-item name="3">
+                <div class="box">3</div>
+            </g-slides-item>
+        </g-slides>
     </div>
 </template>
 <script>
-    import Cascader from './cascader'
-    import db from './db'
-    import Popover from './popover'
-    import {removeListener} from './click-outside'
+    import GSlides from './slides'
+    import GSlidesItem from './slides-item'
 
-
-    function ajax(parentId = 0) {
-        return new Promise((success, fail) => {
-            setTimeout(() => {
-                let result = db.filter((item) => item.parent_id == parentId)
-                result.forEach(node => {
-                    if (db.filter(item => item.parent_id === node.id).length > 0) {
-                        node.isLeaf = false
-                    } else {
-                        node.isLeaf = true
-                    }
-                })
-                success(result)
-            }, 3000)
-        })
-    }
 
     export default {
         name: 'demo',
         components: {
-            'g-cascader': Cascader,
-            'g-popover': Popover
+            GSlides,
+            GSlidesItem
         },
         data(){
             return {
-                selected: [],
-                source: []
+                selected: '1'
             }
         },
-        created() {
-            ajax(0).then(result => {
-                this.source = result
-            })
-        },
-        destroyed() {
-            removeListener()
-        },
-        methods: {
-            loadData({id}, updateSource) {
-                ajax(id).then(result => {
-                    updateSource(result)
-                })
-            }
+        mounted() {
+
         }
     }
 </script>
@@ -68,16 +40,10 @@
         padding: 0;
         box-sizing: border-box;
     }
-
-    img {
-        max-width: 100%;
-    }
-
-    html {
-        --font-size: 14px;
-    }
-
-    body {
-        font-size: var(--font-size);
+    .box {
+        width: 100%;
+        height: 350px;
+        background: #ddd;
+        border: 1px solid #999;
     }
 </style>
