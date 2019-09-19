@@ -31,11 +31,28 @@
 </script>
 
 <style scoped lang="scss">
+    @import "var";
     .g-nav-item {
         padding: 10px 20px;
+        position: relative;
         &.selected {
-            background: #333;
-            color: #fff;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-bottom: 2px solid $blue;
+                width: 100%;
+            }
+        }
+    }
+    .g-sub-nav .g-nav-item {
+        &.selected {
+            color: $color;
+            background: $grey;
+            &::after {
+                display: none;
+            }
         }
     }
 </style>

@@ -67,8 +67,10 @@
 </script>
 
 <style scoped lang="scss">
+    @import "var";
     .g-nav {
         display: flex;
-        border: 1px solid #999;
+        border-bottom: 1px solid $grey;
+        cursor: default;
     }
 </style>
