@@ -36,7 +36,7 @@
     }
 </script>
 <style lang="scss" scoped>
-    @import "var";
+    @import "../var";
     @keyframes spin {
         0% {transform: rotate(0deg);}
         100% {transform: rotate(360deg);}

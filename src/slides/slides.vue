@@ -3,7 +3,6 @@
          @mouseenter="onMouseEnter"
          @mouseleave="onMouseLeave"
          @touchstart="onTouchStart"
-         @touchmove="onTouchMove"
          @touchend="onTouchEnd"
     >
         <div class="g-slides-window" ref="window">
@@ -29,7 +28,7 @@
 </template>
 
 <script>
-    import GIcon from './icon'
+    import GIcon from '../icon'
     export default {
         components: {GIcon},
         props: {
