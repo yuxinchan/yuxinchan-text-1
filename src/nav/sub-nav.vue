@@ -1,7 +1,10 @@
 <template>
     <div class="g-sub-nav" :class="{active}" v-click-outside="close">
-        <span @click="onClick">
+        <span class="g-sub-nav-label" @mouseenter="onMouseEnter">
             <slot name="title"></slot>
+            <span class="g-sub-nav-icon" :class="{open}">
+                <g-icon name="right"></g-icon>
+            </span>
         </span>
         <div class="g-sub-nav-popover" v-show="open">
             <slot></slot>
@@ -11,7 +14,9 @@
 
 <script>
     import ClickOutside from '../click-outside'
+    import GIcon from '../icon'
     export default {
+        components: {GIcon},
         directives: {ClickOutside},
         name: "GuluSubNav",
         inject: ['root'],
@@ -32,7 +37,7 @@
             }
         },
         methods: {
-            onClick() {
+            onMouseEnter() {
                 this.open = !this.open
             },
             close() {
@@ -64,9 +69,12 @@
                 width: 100%;
             }
         }
-        > span {
+        &-label {
             display: block;
             padding: 10px 20px;
+        }
+        &-icon {
+            display: none;
         }
         &-popover {
             position: absolute;
@@ -82,18 +90,30 @@
             min-width: 6em;
         }
     }
-    .g-sub-nav .g-sub-nav {
-         &.active {
-            color: $color;
-            background: $grey;
+    .g-sub-nav .g-sub-nav{
+        &.active {
             &::after {
                 display: none;
             }
         }
-    }
-    .g-sub-nav .g-sub-nav .g-sub-nav-popover {
-        top: 0;
-        left: 100%;
-        margin-left: 4px;
+        .g-sub-nav-popover {
+            top: 0;
+            left: 100%;
+            margin-left: 4px;
+        }
+        .g-sub-nav-label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .g-sub-nav-icon {
+            transition: transform 200ms;
+            display: inline-flex;
+            margin-left: 1em;
+            svg{fill: $light-color}
+            &.open {
+                transform: rotate(180deg);
+            }
+        }
     }
 </style>
