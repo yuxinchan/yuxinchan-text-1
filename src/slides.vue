@@ -89,8 +89,6 @@
                 if (e.touches.length > 1) {return}
                 this.startTouch = e.touches[0]
             },
-            onTouchMove() {
-            },
             onTouchEnd(e) {
                 let endTouch = e.changedTouches[0]
                 let {clientX:x1, clientY: y1} = this.startTouch

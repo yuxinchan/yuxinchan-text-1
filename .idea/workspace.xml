@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52e198ae-c03f-4361-a492-042c4b541f03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/unit/slides.spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fixtures/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/popover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/popover.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/slides.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/slides.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,17 +34,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/slides.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1102">
-              <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+            <state relative-caret-position="418">
+              <caret line="106" column="44" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/popover.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/unit/slides.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="100" column="31" lean-forward="true" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
+            <state relative-caret-position="2280">
+              <caret line="126" column="2" selection-start-line="126" selection-start-column="2" selection-end-line="126" selection-end-column="2" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -88,7 +102,6 @@
         <option value="$PROJECT_DIR$/src/tabs-item.vue" />
         <option value="$PROJECT_DIR$/test/tabs-item.test.js" />
         <option value="$PROJECT_DIR$/src/tabs.vue" />
-        <option value="$PROJECT_DIR$/src/popover.vue" />
         <option value="$PROJECT_DIR$/test/button.test.js" />
         <option value="$PROJECT_DIR$/test/popover.test.js" />
         <option value="$PROJECT_DIR$/src/collapse-item.vue" />
@@ -129,14 +142,15 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/demo.vue" />
         <option value="$PROJECT_DIR$/src/slides-item.vue" />
-        <option value="$PROJECT_DIR$/src/slides.vue" />
         <option value="$PROJECT_DIR$/tests/unit/slides.spec.js" />
+        <option value="$PROJECT_DIR$/src/slides.vue" />
+        <option value="$PROJECT_DIR$/src/popover.vue" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="607" />
-    <option name="y" value="22" />
+    <option name="x" value="758" />
+    <option name="y" value="50" />
     <option name="width" value="1455" />
     <option name="height" value="1000" />
   </component>
@@ -153,6 +167,11 @@
             <path>
               <item name="gulu-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="gulu-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gulu-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gulu-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gulu-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -241,14 +260,8 @@
       <workItem from="1568636237814" duration="414000" />
       <workItem from="1568684194640" duration="3253000" />
       <workItem from="1568764466047" duration="6805000" />
-      <workItem from="1568773168260" duration="17296000" />
-    </task>
-    <task id="LOCAL-00050" summary="支持 disabled 功能">
-      <created>1568102600769</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1568102600781</updated>
+      <workItem from="1568773168260" duration="17551000" />
+      <workItem from="1568853716691" duration="355000" />
     </task>
     <task id="LOCAL-00051" summary="添加部分测试用例">
       <created>1568108102892</created>
@@ -586,15 +599,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568787494015</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="添加测试用例">
+      <created>1568793588195</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1568793588195</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271519000" />
+    <option name="totallyTimeSpent" value="272129000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="658" y="12" width="1164" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="-353" y="82" width="1164" height="800" extended-state="0" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.24920635" />
       <window_info id="npm" order="1" side_tool="true" />
@@ -615,7 +634,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.2414105" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.24593128" />
     </layout>
     <layout-to-restore>
       <window_info id="npm" order="0" side_tool="true" />
@@ -644,7 +663,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加 single 选项" />
     <MESSAGE value="可以设置默认 selected" />
     <MESSAGE value="创建官网" />
     <MESSAGE value="官网雏形基本建立" />
@@ -669,7 +687,8 @@
     <MESSAGE value="设置切换小方块" />
     <MESSAGE value="支持手机的左右滑动" />
     <MESSAGE value="支持上下翻页" />
-    <option name="LAST_COMMIT_MESSAGE" value="支持上下翻页" />
+    <MESSAGE value="添加测试用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加测试用例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -682,13 +701,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/footer.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/components/README.md" />
     <entry file="file://$PROJECT_DIR$/node_modules/vue/types/options.d.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -835,20 +847,10 @@
     <entry file="file://$PROJECT_DIR$/babel.config.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/db.js">
+    <entry file="file://$PROJECT_DIR$/tests/fixtures/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="121" selection-start-line="3" selection-start-column="121" selection-end-line="3" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/popover.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="99" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -967,13 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/slides-item.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/button.spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -994,19 +989,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/slides.vue">
+    <entry file="file://$PROJECT_DIR$/tests/unit/slides.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1102">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+        <state relative-caret-position="2280">
+          <caret line="126" column="2" selection-start-line="126" selection-start-column="2" selection-end-line="126" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/unit/slides.spec.js">
+    <entry file="file://$PROJECT_DIR$/src/slides-item.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="100" column="31" lean-forward="true" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
+        <state relative-caret-position="190">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/slides.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="106" column="44" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixtures">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/popover.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
