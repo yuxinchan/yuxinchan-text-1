@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52e198ae-c03f-4361-a492-042c4b541f03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fixtures/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/popover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/popover.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/slides.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/slides.vue" afterDir="false" />
-    </list>
+    <list default="true" id="52e198ae-c03f-4361-a492-042c4b541f03" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -149,9 +143,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="758" />
-    <option name="y" value="50" />
-    <option name="width" value="1455" />
+    <option name="x" value="1042" />
+    <option name="y" value="28" />
+    <option name="width" value="773" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -200,6 +194,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\web\ajax\demo\vue\text4\gulu-demo\tests\fixtures" />
       <recent name="C:\wamp64\www\web\ajax\demo\vue\text4\gulu-demo\tests\unit" />
       <recent name="C:\wamp64\www\web\ajax\demo\vue\text4\gulu-demo\docs" />
       <recent name="C:\wamp64\www\web\ajax\demo\vue\text4\gulu-demo" />
@@ -261,21 +256,7 @@
       <workItem from="1568684194640" duration="3253000" />
       <workItem from="1568764466047" duration="6805000" />
       <workItem from="1568773168260" duration="17551000" />
-      <workItem from="1568853716691" duration="355000" />
-    </task>
-    <task id="LOCAL-00051" summary="添加部分测试用例">
-      <created>1568108102892</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1568108102903</updated>
-    </task>
-    <task id="LOCAL-00052" summary="创建 povover 组件">
-      <created>1568164986850</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1568164986850</updated>
+      <workItem from="1568853716691" duration="610000" />
     </task>
     <task id="LOCAL-00053" summary="实现最简单的 povover">
       <created>1568167493080</created>
@@ -606,14 +587,29 @@
       <option name="project" value="LOCAL" />
       <updated>1568793588195</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="吧 destroyed 改为 beforeDestory">
+      <created>1568854257273</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1568854257278</updated>
+    </task>
+    <task id="LOCAL-00101" summary="移动 db.js 到 text/fixtures 目录">
+      <created>1568854340129</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1568854340129</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272129000" />
+    <option name="totallyTimeSpent" value="272384000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-353" y="82" width="1164" height="800" extended-state="0" />
+    <frame x="506" y="29" width="1164" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.24920635" />
       <window_info id="npm" order="1" side_tool="true" />
@@ -663,8 +659,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="可以设置默认 selected" />
-    <MESSAGE value="创建官网" />
     <MESSAGE value="官网雏形基本建立" />
     <MESSAGE value="将 scss 变量提升到 var.scss" />
     <MESSAGE value="创建 cascader 组件" />
@@ -688,7 +682,9 @@
     <MESSAGE value="支持手机的左右滑动" />
     <MESSAGE value="支持上下翻页" />
     <MESSAGE value="添加测试用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加测试用例" />
+    <MESSAGE value="吧 destroyed 改为 beforeDestory" />
+    <MESSAGE value="移动 db.js 到 text/fixtures 目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="移动 db.js 到 text/fixtures 目录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
