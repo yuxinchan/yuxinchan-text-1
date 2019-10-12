@@ -44,7 +44,7 @@
     }
 </script>
 <style lang="scss" scoped>
-    @import "var";
+    @import "./../styles/var";
     .wrapper {
         font-size: $font-size; display: inline-flex; align-items: center;
         > :not(last-child) {margin-right: .5em;}

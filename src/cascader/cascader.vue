@@ -116,7 +116,7 @@
 </script>
 
 <style scoped lang="scss">
-    @import "var";
+    @import "../../styles/var";
     .cascader {
         position: relative;
         display: inline-block;

@@ -1,13 +1,13 @@
 ---
-title: Button 按钮
+title: Toast 提示框
 sidebarDepth: 2
 ---
 
-# 按钮
+# 提示框
 
 使用方法
 
 
 <ClientOnly>
-  <button-demos></button-demos>
+  <toast-demos></toast-demos>
 </ClientOnly>

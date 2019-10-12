@@ -1,8 +1,8 @@
 <template>
     <transition name="slide">
-        <div class="sider" v-if="visiable">
+        <div class="sider" v-if="visiable" :foldable="foldable">
+            <button v-if="foldable" @click="visiable=false">close</button>
             <slot></slot>
-            <button @click="visiable=false">close</button>
         </div>
     </transition>
 </template>
@@ -10,6 +10,12 @@
 <script>
     export default {
         name: 'GuluSider',
+        props: {
+            foldable: {
+                type: [Boolean, String],
+                default: false
+            }
+        },
         data() {
             return {
                 visiable: true
@@ -34,6 +40,6 @@
         transition: all .5s;
     }
     .slide-enter, .slide-leave-to {
-        margin-left: -200px;
+        margin-left: -100px;
     }
 </style>

@@ -1,13 +1,13 @@
 ---
-title: Button 按钮
+title: Input 输入框
 sidebarDepth: 2
 ---
 
-# 按钮
+# 输入框
 
 使用方法
 
 
 <ClientOnly>
-  <button-demos></button-demos>
+  <input-demos></input-demos>
 </ClientOnly>

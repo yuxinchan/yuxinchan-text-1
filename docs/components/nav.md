@@ -1,13 +1,13 @@
 ---
-title: Button 按钮
+title: Nav 菜单导航
 sidebarDepth: 2
 ---
 
-# 按钮
+# 菜单导航
 
 使用方法
 
 
 <ClientOnly>
-  <button-demos></button-demos>
+  <nav-demos></nav-demos>
 </ClientOnly>

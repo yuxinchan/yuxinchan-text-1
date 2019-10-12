@@ -56,7 +56,7 @@
 </script>
 
 <style scoped lang="scss">
-    @import "var";
+    @import "../../styles/var";
     .g-sub-nav {
         position: relative;
         &.active {

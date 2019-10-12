@@ -1,13 +1,13 @@
 ---
-title: Button 按钮
+title: Slides 轮播
 sidebarDepth: 2
 ---
 
-# 按钮
+# 轮播
 
 使用方法
 
 
 <ClientOnly>
-  <button-demos></button-demos>
+  <slides-demos></slides-demos>
 </ClientOnly>

@@ -55,6 +55,7 @@
     $grey: #ddd;
     $border-radius: 4px;
     .collapseItem {
+        cursor: pointer;
         > .title {
             border: 1px solid $grey;
             margin: -1px;

@@ -1,6 +1,6 @@
 module.exports = {
     base: '/yuxinchan-text-1/',
-    title: 'Gulu UI',
+    title: 'UI Chan',
     description: '一个好用的UI框架',
     themeConfig: {
         sidebar: [
@@ -13,7 +13,19 @@ module.exports = {
             },
             {
                 title: '组件',
-                children: ['/components/button']
+                children: [
+                    '/components/button',
+                    '/components/input',
+                    '/components/grid',
+                    '/components/layout',
+                    '/components/toast',
+                    '/components/tabs',
+                    '/components/popover',
+                    '/components/collapse',
+                    '/components/cascader',
+                    '/components/slides',
+                    '/components/nav'
+                ]
             }
         ]
     }

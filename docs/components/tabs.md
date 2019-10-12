@@ -1,13 +1,13 @@
 ---
-title: Button 按钮
+title: Tabs 标签页
 sidebarDepth: 2
 ---
 
-# 按钮
+# 标签页
 
 使用方法
 
 
 <ClientOnly>
-  <button-demos></button-demos>
+  <tabs-demos></tabs-demos>
 </ClientOnly>

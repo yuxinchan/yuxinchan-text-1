@@ -60,6 +60,6 @@
 
 <style lang="scss" scoped>
     .tabs {
-
+        position: relative;
     }
 </style>
